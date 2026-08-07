@@ -1,0 +1,23 @@
+{
+  "custom_fonts": [
+    "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+  ],
+  "light": {
+    "primary": {
+      "main": "#7C3AED",
+      "dark": "#5B21B6",
+      "light": "#A78BFA"
+    },
+    "background": "#FAFAFC",
+    "paper": "#FFFFFF"
+  },
+  "dark": {
+    "primary": {
+      "main": "#A78BFA",
+      "dark": "#7C3AED",
+      "light": "#C4B5FD"
+    },
+    "background": "#0F0F14",
+    "paper": "#17171F"
+  }
+}
