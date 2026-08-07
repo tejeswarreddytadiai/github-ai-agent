@@ -8,5 +8,10 @@
     "name": "manager_cdsid",
     "mode": "NULLABLE",
     "type": "STRING"
+  },
+  {
+    "name": "worst_stat_24mo_cd",
+    "mode": "NULLABLE",
+    "type": "INTEGER"
   }
 ]
