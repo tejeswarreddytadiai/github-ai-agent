@@ -1,0 +1,12 @@
+[
+  {
+    "name": "employee_cdsid",
+    "mode": "NULLABLE",
+    "type": "STRING"
+  },
+  {
+    "name": "manager_cdsid",
+    "mode": "NULLABLE",
+    "type": "STRING"
+  }
+]
