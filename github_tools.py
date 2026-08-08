@@ -35,6 +35,32 @@ class SchemaUpdateResult:
 # Branching
 # ---------------------------------------------------------------------------
 
+def read_schema_fields(
+    schema_path: str, ref: Optional[str] = None
+) -> list[dict]:
+    """Return the current list of BigQuery field dicts from ``schema_path``.
+
+    Reads from ``ref`` (a branch/tag/SHA). If ``ref`` is ``None``, uses the
+    configured base branch.
+
+    Raises:
+        ValueError: if the file is missing, not JSON, or not a JSON array.
+    """
+    repo = get_repo()
+    contents = repo.get_contents(schema_path, ref=ref or settings.github_base_branch)
+    if isinstance(contents, list):
+        raise ValueError(f"Expected a file at {schema_path}, got a directory.")
+
+    try:
+        fields = json.loads(contents.decoded_content.decode("utf-8"))
+    except json.JSONDecodeError as exc:
+        raise ValueError(f"Schema at {schema_path} is not valid JSON.") from exc
+
+    if not isinstance(fields, list):
+        raise ValueError(f"Schema at {schema_path} must be a JSON array.")
+    return fields
+
+
 def create_feature_branch(table_id: str, base: Optional[str] = None) -> BranchInfo:
     """Create a feature branch off the base branch.
 

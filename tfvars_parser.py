@@ -54,6 +54,42 @@ def _iter_balanced_blocks(text: str) -> Iterator[str]:
         i = j + 1
 
 
+def normalize_table_ref(text: str) -> tuple[str, str] | None:
+    """Parse a table reference into ``(dataset_id, table_id)``.
+
+    Accepts (whitespace and surrounding punctuation are stripped):
+      - ``dataset.table``
+      - ``project.dataset.table`` — the project component is discarded
+        (so ``prj-dfdl-817-tdbq-p-817.zgrps3rd.zgrt415_ccbsrdm`` becomes
+        ``("zgrps3rd", "zgrt415_ccbsrdm")``)
+
+    Returns ``None`` if the input cannot be parsed into 2 or 3 dot-separated
+    identifier-shaped components.
+    """
+    if not text:
+        return None
+
+    cleaned = text.strip().strip("`\"'").strip()
+    parts = [p for p in cleaned.split(".") if p]
+
+    _ident_re = re.compile(r"^[A-Za-z0-9_-]+$")
+    if len(parts) == 2 and all(_ident_re.match(p) for p in parts):
+        return parts[0], parts[1]
+    if len(parts) == 3 and all(_ident_re.match(p) for p in parts):
+        return parts[1], parts[2]
+    return None
+
+
+def find_schema_file_by_ref(
+    tfvars_path: str | Path, dataset_id: str, table_id: str
+) -> str | None:
+    """Non-raising variant of :func:`find_schema_file`: returns ``None`` on miss."""
+    try:
+        return find_schema_file(tfvars_path, dataset_id, table_id)
+    except LookupError:
+        return None
+
+
 def find_schema_file(tfvars_path: str | Path, dataset_id: str, table_id: str) -> str:
     """Locate the schema_file for a given (dataset_id, table_id) pair.
 
