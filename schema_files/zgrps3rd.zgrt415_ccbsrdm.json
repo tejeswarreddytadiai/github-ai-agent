@@ -13,5 +13,10 @@
     "name": "worst_stat_24mo_cd",
     "mode": "NULLABLE",
     "type": "INTEGER"
+  },
+  {
+    "name": "worst_stat_26mo_cd",
+    "mode": "NULLABLE",
+    "type": "STRING"
   }
 ]
