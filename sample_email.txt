@@ -2,7 +2,7 @@ Hi Rahul,
 could you please add this column to the 415 table and views in DEV and QA. Please find the requirements below.
 
 Num Column Name                    Coltype  Length Nl Up Pkey Dfl Bit Length2
-60  WORST_STAT_24MO_CD             SMALLINT 2      Y  Y        Y
+60  BEST_STAT_24MO_CD             SMALLINT 2      Y  Y        Y
 
 There is no description for this in Db2 table and the field is nullable.
 
