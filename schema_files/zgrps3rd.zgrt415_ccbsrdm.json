@@ -23,5 +23,10 @@
     "name": "best_stat_24mo_cd",
     "mode": "NULLABLE",
     "type": "INTEGER"
+  },
+  {
+    "name": "bigquery1_stat_24mo_cd",
+    "mode": "NULLABLE",
+    "type": "INTEGER"
   }
 ]
