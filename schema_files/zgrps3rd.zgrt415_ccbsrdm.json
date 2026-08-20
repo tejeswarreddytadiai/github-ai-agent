@@ -28,5 +28,20 @@
     "name": "bigquery1_stat_24mo_cd",
     "mode": "NULLABLE",
     "type": "INTEGER"
+  },
+  {
+    "name": "bigquery4_stat_24mo_cd",
+    "mode": "NULLABLE",
+    "type": "INTEGER"
+  },
+  {
+    "name": "bigquery2_stat_24mo_cd",
+    "mode": "NULLABLE",
+    "type": "INTEGER"
+  },
+  {
+    "name": "bigquery3_stat_24mo_cd",
+    "mode": "NULLABLE",
+    "type": "STRING"
   }
 ]
