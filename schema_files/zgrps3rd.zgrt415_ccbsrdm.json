@@ -43,5 +43,10 @@
     "name": "bigquery3_stat_24mo_cd",
     "mode": "NULLABLE",
     "type": "STRING"
+  },
+  {
+    "name": "query4_stat_24mo_cd",
+    "mode": "NULLABLE",
+    "type": "INTEGER"
   }
 ]
