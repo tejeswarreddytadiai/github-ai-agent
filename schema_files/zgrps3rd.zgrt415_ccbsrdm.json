@@ -53,5 +53,20 @@
     "name": "gquery4_stat_24mo_cd",
     "mode": "NULLABLE",
     "type": "STRING"
+  },
+  {
+    "name": "qa1_stat_24mo_cd",
+    "mode": "NULLABLE",
+    "type": "INTEGER"
+  },
+  {
+    "name": "qa2_stat_24mo_cd",
+    "mode": "NULLABLE",
+    "type": "INTEGER"
+  },
+  {
+    "name": "qa3_stat_24mo_cd",
+    "mode": "NULLABLE",
+    "type": "INTEGER"
   }
 ]
