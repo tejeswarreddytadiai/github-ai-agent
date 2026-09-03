@@ -68,5 +68,20 @@
     "name": "qa3_stat_24mo_cd",
     "mode": "NULLABLE",
     "type": "INTEGER"
+  },
+  {
+    "name": "qa10_cd",
+    "mode": "NULLABLE",
+    "type": "INTEGER"
+  },
+  {
+    "name": "qa21_gd",
+    "mode": "NULLABLE",
+    "type": "INTEGER"
+  },
+  {
+    "name": "qa32_th",
+    "mode": "NULLABLE",
+    "type": "INTEGER"
   }
 ]
