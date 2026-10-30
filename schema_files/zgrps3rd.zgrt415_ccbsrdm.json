@@ -113,5 +113,10 @@
     "name": "fe32_th",
     "mode": "NULLABLE",
     "type": "INTEGER"
+  },
+  {
+    "name": "kda10_cbid",
+    "mode": "NULLABLE",
+    "type": "INTEGER"
   }
 ]
