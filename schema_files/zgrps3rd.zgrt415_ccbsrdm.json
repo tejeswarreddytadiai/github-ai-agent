@@ -123,5 +123,10 @@
     "name": "ghi10_ihg",
     "mode": "NULLABLE",
     "type": "INTEGER"
+  },
+  {
+    "name": "bvgf10_567h",
+    "mode": "NULLABLE",
+    "type": "INTEGER"
   }
 ]
