@@ -98,5 +98,20 @@
     "name": "ta32_th",
     "mode": "NULLABLE",
     "type": "INTEGER"
+  },
+  {
+    "name": "gra10_cd",
+    "mode": "NULLABLE",
+    "type": "INTEGER"
+  },
+  {
+    "name": "hre21_gd",
+    "mode": "NULLABLE",
+    "type": "INTEGER"
+  },
+  {
+    "name": "dge32_th",
+    "mode": "NULLABLE",
+    "type": "INTEGER"
   }
 ]
