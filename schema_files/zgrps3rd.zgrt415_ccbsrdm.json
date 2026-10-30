@@ -118,5 +118,10 @@
     "name": "kda10_cbid",
     "mode": "NULLABLE",
     "type": "INTEGER"
+  },
+  {
+    "name": "ghi10_ihg",
+    "mode": "NULLABLE",
+    "type": "INTEGER"
   }
 ]
