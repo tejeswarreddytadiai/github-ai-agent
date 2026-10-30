@@ -128,5 +128,10 @@
     "name": "bvgf10_567h",
     "mode": "NULLABLE",
     "type": "INTEGER"
+  },
+  {
+    "name": "b7fgt10_567h",
+    "mode": "NULLABLE",
+    "type": "INTEGER"
   }
 ]
