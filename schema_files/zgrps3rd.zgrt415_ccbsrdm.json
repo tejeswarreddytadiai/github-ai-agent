@@ -98,5 +98,20 @@
     "name": "ta32_th",
     "mode": "NULLABLE",
     "type": "INTEGER"
+  },
+  {
+    "name": "kda10_cd",
+    "mode": "NULLABLE",
+    "type": "INTEGER"
+  },
+  {
+    "name": "hfe21_gd",
+    "mode": "NULLABLE",
+    "type": "INTEGER"
+  },
+  {
+    "name": "fe32_th",
+    "mode": "NULLABLE",
+    "type": "INTEGER"
   }
 ]
